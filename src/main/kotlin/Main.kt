@@ -8,7 +8,7 @@ import kotlin.Exception
 
 fun main(args: Array<String>) {
 
-    val options = setupOptions();
+    val options = setupOptions()
     val commandLineParser = DefaultParser()
     val parseResult = try {
         commandLineParser.parse(options, args)
