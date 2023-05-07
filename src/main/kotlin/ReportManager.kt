@@ -6,7 +6,7 @@ import org.jsoup.Jsoup
 const val USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0"
 const val HOST = "https://www.ezpass.csc.paturnpike.com"
 const val LOGIN_URL = "$HOST/ezpass/Maintenance/Login"
-fun getSession(loginCredentials: LoginCredentials): Map<String, String> {
+fun getSession(loginCredentials: LoginCredentials): Session {
 
     val getLoginFormResponse = Jsoup.connect(LOGIN_URL)
         .userAgent(USER_AGENT)
@@ -31,5 +31,5 @@ fun getSession(loginCredentials: LoginCredentials): Map<String, String> {
             )
         ).execute()
 
-    return loginResponse.cookies()
+    return Session(loginCredentials.username, loginResponse.cookies())
 }
