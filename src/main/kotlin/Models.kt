@@ -6,3 +6,10 @@ data class LoginCredentials(
 )
 
 data class Session(val username: String, val cookies: Map<String, String>)
+
+data class Transponder(
+    val tagNumber: String,
+    val style: String,
+    val color: String,
+    val status: String
+)
