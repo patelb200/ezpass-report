@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ezpass-report</artifactId>
+    <artifactId>ezpass-site-parser</artifactId>
     <groupId>io.bharatpatel.ezpassreport</groupId>
     <version>1</version>
     <packaging>jar</packaging>
 
-    <name>EZ Pass Report</name>
+    <name>E-ZPass Site Parser</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
